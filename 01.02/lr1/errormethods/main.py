@@ -9,7 +9,7 @@ def unexcepted_map_usage():
     ma = {"k": "v"}
     print(ma[0])
 
-unexcepted_map_usage() # KeyError
+# unexcepted_map_usage() # KeyError
 """
     print(ma[0])
           ~~^^^
@@ -21,7 +21,7 @@ ma = {"k": "v"}
 print(ma["k"])
 """
 
-print("Hello World" # SyntaxError
+# print("Hello World" # SyntaxError
 """
 print("Hello World" # SyntaxError
     ^
