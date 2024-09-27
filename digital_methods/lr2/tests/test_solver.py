@@ -34,4 +34,6 @@ def test_integrational():
     p4 = partition.Partition(partition.nilLamb, 1, -1, 10)
     e = equation.Equation([p1, p2, p3, p4])
     s = solver.Solver(e, (0, 4))
-    assert "[0.375, 0.4375]" in str(s.solve())
+    assert "[0.375, 0.4375]" in str(s.solve_root_approx())
+    s.clean_cycle()
+    assert "0.144" in str(s.solve_chord())
