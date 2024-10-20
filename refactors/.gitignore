@@ -1,0 +1,4 @@
+# best_practices/.gitignore
+
+# Mock all .db files
+*.db
