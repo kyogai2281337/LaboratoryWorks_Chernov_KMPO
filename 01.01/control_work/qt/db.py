@@ -21,7 +21,7 @@ class DBWindow(QMainWindow):
         exitAction = QAction('Выход', self)
         exitAction.triggered.connect(self.close)
         updateAction = QAction('Обновить', self)
-        updateAction.triggered.connect(lambda: self.showUsers(l=100, p=1))
+        updateAction.triggered.connect(lambda: self.showUsers())
         createNewAction = QAction('Добавить запись', self)
         createNewAction.triggered.connect(self.createNewRecord)
         deleteAction = QAction('Удалить запись', self)

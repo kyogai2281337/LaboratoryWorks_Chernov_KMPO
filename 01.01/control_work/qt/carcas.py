@@ -11,7 +11,7 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.setWindowTitle("cwork")
         self.db = db
-        self.setFixedSize(QSize(260, 100))
+        self.setFixedSize(QSize(150, 100))
 
         self.runtimeText = rtxt
         self.barstatus = QLabel(self)

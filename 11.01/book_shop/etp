@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Enter the version: "
+read VERSION
+echo "Enter Image name: "
+read IMG_NAME
+echo "Enter port: "
+read PORT
+echo $VERSION $IMG_NAME $PORT
+docker run -d --name $IMG_NAME -p $PORT:3306 book_shop_db:$VERSION
+
