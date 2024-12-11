@@ -11,7 +11,6 @@ class TestCrypt:
         ["BORN IN 2015!", "!4897 Oj oSpC"],
         ["99zzzabc!!!", "!!!dCbAaA00"]
     ]
-    @pytest.mark.test
     def testCase1(self):
         crypt = Crypt(self.group[0][0])
         print(crypt.first)
@@ -19,7 +18,6 @@ class TestCrypt:
         
 
 
-    @pytest.mark.test
     def testCase2(self):
         crypt = Crypt(self.group[1][0])
         assert crypt.Crypt() == self.group[1][1]
